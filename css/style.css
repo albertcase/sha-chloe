@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ font-size: 65%; }
+
+/*clearFix clear-------------------------------------------------------------------------------*/
+.clearFix:after { content:"\nadoo"; display:block; height:0; clear:both; visibility:hidden;}
+.clearFix { zoom:1;} 
+
+
+@font-face{
+	font-family:"Genath";
+	src:../font/Genath-Bold.otf;
+}
+
+
+html, body { height: 100%; overflow: hidden; font-family:Genath,"微软雅黑"; }
+body { font-size:14px; position: relative; background:#fff; }
+view { width:100%; height: 100%; position: absolute; left: 0; top: 0; display: none; overflow:auto; }
+view.page { display: none; position: relative; text-align:center; border:6px #c89e63 solid; }
+
+
+
+/* attention */
+#attention .con{ width: 90%; display: inline-block; }
+.logo{ margin:4% 0 0 0; display: inline-block; width: 40%; }
+.stepcon{ width: 70%; display: inline-block; margin:10% 0 0 0; }
+.stepcon a{ margin: 10% 0 15% 0; display:inline-block; }
+
+
+
+/* 活动规则 */
+#rule{ width: 100%; height: 100%; position: fixed; top:0; left: 0; text-align: center; z-index: 99; background: #fff; border:6px #c89e63 solid; display: none; }
+.close{ width: 6%; position: absolute; right: 6px; top:6px; }
+.rule_con{ width: 71%; display: inline-block; margin: 11% 0 0 5%; color: #c89e63; }
+
+.rule_con h2{ font-size: 1.2em; padding:10% 0; }
+.rule_con ol{ list-style-type:decimal; text-align: left; font-size: 0.7em; line-height: 1.6em; }
+
+/* show */
+.showcon{ width: 86%; display: inline-block; }
+.showcon h3{ padding: 6% 0; display: inline-block; color: #c79d67; width: 100%; text-align: center; font-size: 1em; }
+.btnArea{ padding: 0 0 2% 0; width: 100%; float: left; display: inline-block; }
+.btnArea a{ width: 40%; display: inline-block; }
+.btnArea a:nth-child(1){ float: left; }
+.btnArea a:nth-child(2){ float: right; }
+
+
+/* doing */
+.phizlist{ width: 100%; background:#fdefdc url("../images/listbg.jpg") repeat-x; margin:0 0 3% 0; float: left; display: inline-block;  }
+.phizlist ul{ width: 100%; float: left; display: inline-block; }
+.phizlist li{ width: 25%; padding: 6% 0 5% 0; float: left; display: inline-block; text-align: center; }
+.phizlist li img{ width: 60%; display: inline-block; }
+.doingArea{ padding: 5% 0; width: 86%; display:inline-block; }
+.doingEdit{ width: 100%; height: 350px; border-radius: 3px; border:1px #c89f64 solid; }
+
+
+/* collections */
+#collections .con{ height: 100%; overflow: hidden; }
+.collections_list{ width: 100%; height: 81%; overflow: auto; margin:2% 0 0 0; display: inline-block; }
+.collections_list li{ width: 48%; display: inline-block; position: relative; line-height: 0; }
+.collections_list li .photo{ width: 85%; position: absolute; left: 7%; top:6%; line-height: 0;  }
+
+
+
+/* 弹出层 */
+#popbg{ width: 100%; height: 100%; position: fixed; left: 0; top:0; text-align: center; z-index: 99; background: rgba(0,0,0,0.5); display: none; }
+.pop_con{ width: 80%; margin: 10% 0 0 0; display: inline-block;  text-align: center; }
+
+
+
+
+/* loading */
+.homecon{ margin:40% 0 0 0; display:inline-block; width: 60%;   }
+.loading{ width:100%; text-align:center; padding: 3% 0; font-size:12px; line-height:18px; color:#000; }
+.loadingArea{ width:100%; text-align:center; height:10px; }
+
+.loadingArea > span {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  margin:0 1px;
+  border:1px #c89e63 solid;
+}
+ 
+ 
+.bounce1 {
+  background : #fff;
+  animation : transform 12s infinite;
+  -webkit-animation : transform 12s infinite;
+}
+
+.bounce2 {
+  background : #fff;
+  animation : transform 12s infinite;
+  -webkit-animation : transform 12s infinite;
+  animation-delay : 0.5s;
+  -webkit-animation-delay : 0.5s;
+}
+
+.bounce3 {
+  background : #fff;
+  animation : transform 12s infinite;
+  -webkit-animation : transform 12s infinite;
+  animation-delay : 1s;
+  -webkit-animation-delay : 1s;
+}
+.bounce4 {
+  background : #fff;
+  animation : transform 12s infinite;
+  -webkit-animation : transform 12s infinite;
+  animation-delay : 1.5s;
+  -webkit-animation-delay : 1.5s;
+}
+.bounce5 {
+  background : #fff;
+  animation : transform 12s infinite;
+  -webkit-animation : transform 12s infinite;
+  animation-delay : 2s;
+  -webkit-animation-delay : 2s;
+}
+.bounce6 {
+  background : #fff;
+  animation : transform 12s infinite;
+  -webkit-animation : transform 12s infinite;
+  animation-delay : 2.5s;
+  -webkit-animation-delay : 2.5s;
+}
+.bounce7 {
+  background : #fff;
+  animation : transform 12s infinite;
+  -webkit-animation : transform 12s infinite;
+  animation-delay : 3s;
+  -webkit-animation-delay : 3s;
+}
+.bounce8 {
+  background : #fff;
+  animation : transform 12s infinite;
+  -webkit-animation : transform 12s infinite;
+  animation-delay : 3.5s;
+  -webkit-animation-delay : 3.5s;
+}
+.bounce9 {
+  background : #fff;
+  animation : transform 12s infinite;
+  -webkit-animation : transform 12s infinite;
+  animation-delay : 4s;
+  -webkit-animation-delay : 4s;
+}
+.bounce10 {
+  background : #fff;
+  animation : transform 12s infinite;
+  -webkit-animation : transform 12s infinite;
+  animation-delay : 4.5s;
+  -webkit-animation-delay : 4.5s;
+}
+
+
+@-webkit-keyframes transform {
+  0% {background : #fff;}
+  25% {background : #c89e63;}
+  50% {background : #fff;}
+  75% {background : #c89e63}
+  100% {background : #fff;}
+}
+
+
+@keyframes transform {
+  0% {border-radius : 0px; opacity : 0.5;}
+  20% {border-radius : 0px; opacity : 1;}
+  40% {border-radius : 0px; opacity : 0.5;}
+  60% {border-radius : 50%; opacity : 0.5;}
+  80% {border-radius : 50%; opacity : 1;}
+  100% {border-radius : 50%; opacity : 0.5;}
+}

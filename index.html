@@ -16,37 +16,200 @@
 
 <!--是否允许全屏显，只有在桌面启动时可用-->
 <title>Chloe</title>
-<link href="style/reset.css" rel="stylesheet" type="text/css" />
-<link href="style/style.css" rel="stylesheet" type="text/css" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
 </head>
 
 <body>
-<view class="index" id="index">
-  <div class="logo"></div>
-  <div class="container">
-    <div class="stepNotice">
-      <h2>使用方法：</h2>
-      <p>Step 1. 长按图片保存至您的手机<br />
-        Step 2. 返回微信，进入“我收藏的表情”<br />
-        Step 3. 按+号，将表情从手机相册添加至微信</p>
-    </div>
-    <div class="stickerlist">
-      <ul>
-        <li><img src="images/Chloe-1-2.gif"></li>
-        <li><img src="images/Chloe-2-2.gif"></li>
-        <li><img src="images/Chloe-3-2.gif"></li>
-        <li><img src="images/Chloe-4-2.gif"></li>
-        <li><img src="images/Chloe-5-2.gif"></li>
-        <li><img src="images/Chloe-6-2.gif"></li>
-        <li><img src="images/Chloe-7-2.gif"></li>
-        <li><img src="images/Chloe-8-2.gif"></li>
-        <li><img src="images/Chloe-9-2.gif"></li>
-      </ul>
-    </div>
-  </div>
+<view class="page" id="index">
+     <div class="homecon">
+         <img src="../images/logo1.png" />
+     
+     <div class="loading">
+     	<div class="loadingArea">
+           <span class="bounce1"></span>
+           <span class="bounce2"></span>
+           <span class="bounce3"></span>
+           <span class="bounce4"></span>
+           <span class="bounce5"></span>
+           <span class="bounce6"></span>
+           <span class="bounce7"></span>
+           <span class="bounce8"></span>
+           <span class="bounce9"></span>
+           <span class="bounce10"></span>
+     	</div>
+     </div>
+
+     </div>
 </view>
 
-<script type="text/javascript" src="js/zepto.min.js"></script>
 
+<view class="page" id="attention">
+     <div class="con">
+     	<a href="javascript:;" class="logo"><img src="../images/logo.jpg" /></a>
+        <div class="stepcon">
+         <img src="../images/step1_text.png" width="50%" />
+         <a href="javascript:;"><img src="../images/attention_wechat.png" /></a>
+
+         <img src="../images/step2_text.png" width="50%" />
+         <a href="javascript:;"><img src="../images/share.png" /></a>
+        </div>
+
+     </div>
+</view>
+
+
+<view class="page" id="show">
+     <div class="con">
+     	<a href="javascript:;" class="logo"><img src="../images/logo.jpg" /></a>
+        <div class="showcon">
+            <img src="../images/moban.png" width="100%" />
+            <h3>分享你的LOVE瞬间，赢取Chloé精美礼品</h3>
+            <div class="btnArea"><a href="javascript:;" class="upload_btn"><img src="../images/upload_btn.png" width="100%" /></a>
+            <a href="javascript:;" class="photo_btn"><img src="../images/photo_ware.png" width="100%" /></a></div>
+        </div>
+
+     </div>
+</view>
+
+<view class="page" id="doing" style="display:block;">
+     <div class="con">
+     	<a href="javascript:;" class="logo"><img src="../images/logo.jpg" /></a>
+        <div class="doingArea">
+             <div class="doingEdit"> 
+            	 <input type="file" class="change_re" id="fileElem_re" accept="image/*" onchange="previewImage(this);">               
+				 <canvas id="synCnavas"></canvas>
+				 <img src="" id="curing" width="100%" />
+             </div>
+        </div>
+     	<div class="phizlist">
+            <ul>
+               <li><img src="../images/p1.png" /></li>
+               <li><img src="../images/p1.png" /></li>
+               <li><img src="../images/p1.png" /></li>
+               <li><img src="../images/p1.png" /></li>
+            </ul>
+     	</div>
+        <div class="showcon">
+            <div class="btnArea">
+            	<a href="javascript:;" class="prev_btn"><img src="../images/prev_btn.png" width="100%" /></a>
+                <a href="javascript:;" class="next_btn"><img src="../images/next_btn.png" width="100%" /></a>
+            </div>
+        </div>
+
+     </div>
+</view>
+
+
+<view class="page" id="result">
+     <div class="con">
+     	<a href="javascript:;" class="logo"><img src="../images/logo.jpg" /></a>
+
+        <div class="showcon">
+        	<img src="../images/result.jpg" width="100%" />
+            <h3>分享你的LOVE瞬间，赢取Chloé精美礼品</h3>
+            <div class="btnArea">
+            	<a href="javascript:;" class="share_btn"><img src="../images/share_btn.png" width="100%" /></a>
+                <a href="javascript:;" class="photo_btn"><img src="../images/photo_ware.png" width="100%" /></a></a>
+            </div>
+        </div>
+
+     </div>
+</view>
+
+<view class="page" id="result2">
+     <div class="con">
+     	<a href="javascript:;" class="logo"><img src="../images/logo.jpg" /></a>
+
+        <div class="showcon">
+        	<img src="../images/result.jpg" width="100%" />
+            <h3>分享你的LOVE瞬间，赢取Chloé精美礼品</h3>
+            <div class="btnArea">
+            	<a href="javascript:;" class="rehome_btn"><img src="../images/rehome.png" width="100%" /></a>
+                <a href="javascript:;" class="photo_btn"><img src="../images/photo_ware.png" width="100%" /></a></a>
+            </div>
+        </div>
+
+     </div>
+</view>
+
+<view class="page" id="collections">
+     <div class="con">
+     	<a href="javascript:;" class="logo"><img src="../images/logo.jpg" /></a>
+
+        <div class="collections_list">
+        	<ul>
+                <li>
+                	<img src="../images/photobg.png" />
+                    <div class="photo"><img src="../images/listpic.jpg" data-url="../images/listpic.jpg" /></div>
+                </li>
+                <li>
+                	<img src="../images/photobg.png" />
+                    <div class="photo"><img src="../images/listpic.jpg"  data-url="../images/listpic.jpg"/></div>
+                </li>
+                <li>
+                	<img src="../images/photobg.png" />
+                    <div class="photo"><img src="../images/listpic.jpg" data-url="../images/listpic.jpg" /></div>
+                </li>
+                <li>
+                	<img src="../images/photobg.png" />
+                    <div class="photo"><img src="../images/listpic.jpg" data-url="../images/listpic.jpg" /></div>
+                </li>
+                <li>
+                	<img src="../images/photobg.png" />
+                    <div class="photo"><img src="../images/listpic.jpg" data-url="../images/listpic.jpg" /></div>
+                </li>
+                <li>
+                	<img src="../images/photobg.png" />
+                    <div class="photo"><img src="../images/listpic.jpg" data-url="../images/listpic.jpg" /></div>
+                </li>
+                <li>
+                	<img src="../images/photobg.png" />
+                    <div class="photo"><img src="../images/listpic.jpg" data-url="../images/listpic.jpg" /></div>
+                </li>
+                <li>
+                	<img src="../images/photobg.png" />
+                    <div class="photo"><img src="../images/listpic.jpg" data-url="../images/listpic.jpg" /></div>
+                </li>
+        	</ul>
+        </div>
+
+     </div>
+</view>
+
+
+<div id="rule">
+   <a href="javascript:;" class="close"><img src="../images/close.png" /></a>
+   <div class="rule_con">
+     <h2>活动参与方式</h2>
+     <ol>
+        <li>2月13日至2月24日，上传并在朋友圈分享自己的LOVE瞬间照片（字数限30字内）。</li>
+        <li>Chloé将臻选甜蜜照片，展示于活动照片墙。</li>
+        <li>入选照片墙的精彩照片将获得Chloé提供的礼品。</li>
+        <li>Chloé将于2月28日公布获奖名单。</li>
+     </ol>
+     <h2>礼  品</h2>
+     <ol>
+        <li>中奖者将会获得精美Chloé LOVE STORY香水一份。</li>
+        <li>中奖者可于活动结束后领取奖品，具体领奖时间将由Chloé官方通知。</li>
+        <li>若受货源或者其他不可抗力影响，领奖时间可能会相应推后，Chloé将会根据实际情况相应通知中奖者。</li>
+     </ol>
+   </div>
+</div>
+
+
+<div id="popbg">
+<div class="pop_con">
+<img src="../images/result.jpg"
+</div>
+</div>
+
+
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/easeljs-0.7.1.min.js"></script>
+<script type="text/javascript" src="js/canvasCreat.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
