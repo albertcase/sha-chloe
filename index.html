@@ -60,41 +60,41 @@
 </view>
 
 
-<view class="page" id="show">
+<view class="page" id="show" style="display:block;">
      <div class="con">
      	<a href="javascript:;" class="logo"><img src="../images/logo.jpg" /></a>
         <div class="showcon">
-            <img src="../images/moban.png" width="100%" />
+            <img src="../images/moban.png" width="100%" id="fg" />
             <h3>分享你的LOVE瞬间，赢取Chloé精美礼品</h3>
-            <div class="btnArea"><a href="javascript:;" class="upload_btn"><img src="../images/upload_btn.png" width="100%" /></a>
-            <a href="javascript:;" class="photo_btn"><img src="../images/photo_ware.png" width="100%" /></a></div>
+            <div class="btnArea"><a href="javascript:;" class="upload_btn"><input type="file" class="change_re" id="fileElem_re" accept="image/*" onchange="previewImage(this);"  ><img src="../images/upload_btn.png" width="100%" /></a>
+            <a href="javascript:pageChange('collections');" class="photo_btn"><img src="../images/photo_ware.png" width="100%" /></a></div>
         </div>
 
      </div>
 </view>
 
-<view class="page" id="doing" style="display:block;">
+<view class="page" id="doing">
      <div class="con">
      	<a href="javascript:;" class="logo"><img src="../images/logo.jpg" /></a>
         <div class="doingArea">
-             <div class="doingEdit"> 
-            	 <input type="file" class="change_re" id="fileElem_re" accept="image/*" onchange="previewImage(this);">               
+             <div class="doingEdit">
+                 <div class="inputbg"><textarea maxlength="27" placeholder="点击输入LOVE寄语" name="" cols="" rows="" value="" id="doingInput"></textarea></div>          
 				 <canvas id="synCnavas"></canvas>
 				 <img src="" id="curing" width="100%" />
              </div>
         </div>
      	<div class="phizlist">
             <ul>
-               <li><img src="../images/p1.png" /></li>
-               <li><img src="../images/p1.png" /></li>
-               <li><img src="../images/p1.png" /></li>
-               <li><img src="../images/p1.png" /></li>
+               <li onclick="faceimg1()"><img src="../images/p1.png" /></li>
+               <li onclick="faceimg2()"><img src="../images/p2.png" /></li>
+               <li onclick="faceimg3()"><img src="../images/p3.png" /></li>
+               <li onclick="faceimg4()"><img src="../images/p4.png" /></li>
             </ul>
      	</div>
         <div class="showcon">
             <div class="btnArea">
-            	<a href="javascript:;" class="prev_btn"><img src="../images/prev_btn.png" width="100%" /></a>
-                <a href="javascript:;" class="next_btn"><img src="../images/next_btn.png" width="100%" /></a>
+            	<a href="javascript:pageChange('show');" class="prev_btn"><img src="../images/prev_btn.png" width="100%" /></a>
+                <a href="javascript:creatOk();" class="preview_btn"><img src="../images/preview_btn.png" width="100%" /></a>
             </div>
         </div>
 
@@ -105,9 +105,12 @@
 <view class="page" id="result">
      <div class="con">
      	<a href="javascript:;" class="logo"><img src="../images/logo.jpg" /></a>
-
+        <div class="doingArea">
+             <div class="doingEdit">
+                <div class="imgLayer"><img src="" id="resultImg" width="100%" /></div>
+             </div>
+        </div>
         <div class="showcon">
-        	<img src="../images/result.jpg" width="100%" />
             <h3>分享你的LOVE瞬间，赢取Chloé精美礼品</h3>
             <div class="btnArea">
             	<a href="javascript:;" class="share_btn"><img src="../images/share_btn.png" width="100%" /></a>
@@ -136,6 +139,7 @@
 
 <view class="page" id="collections">
      <div class="con">
+        <a href="javascript:pageChange('show')" class="backprev"><img src="../images/back_Arr.png" width="100%" /></a>
      	<a href="javascript:;" class="logo"><img src="../images/logo.jpg" /></a>
 
         <div class="collections_list">

@@ -39,11 +39,12 @@ view.page { display: none; position: relative; text-align:center; border:6px #c8
 
 /* show */
 .showcon{ width: 86%; display: inline-block; }
-.showcon h3{ padding: 6% 0; display: inline-block; color: #c79d67; width: 100%; text-align: center; font-size: 1em; }
+.showcon h3{ padding: 3% 0; display: inline-block; color: #c79d67; width: 100%; text-align: center; font-size: 1em; }
 .btnArea{ padding: 0 0 2% 0; width: 100%; float: left; display: inline-block; }
-.btnArea a{ width: 40%; display: inline-block; }
+.btnArea a{ width: 40%; display: inline-block; position: relative; }
 .btnArea a:nth-child(1){ float: left; }
 .btnArea a:nth-child(2){ float: right; }
+.upload_btn input{ width: 100%; height: 100%; position: absolute; left: 0; top:0; z-index: 2; opacity: 0; }
 
 
 /* doing */
@@ -51,15 +52,19 @@ view.page { display: none; position: relative; text-align:center; border:6px #c8
 .phizlist ul{ width: 100%; float: left; display: inline-block; }
 .phizlist li{ width: 25%; padding: 6% 0 5% 0; float: left; display: inline-block; text-align: center; }
 .phizlist li img{ width: 60%; display: inline-block; }
-.doingArea{ padding: 5% 0; width: 86%; display:inline-block; }
-.doingEdit{ width: 100%; height: 350px; border-radius: 3px; border:1px #c89f64 solid; }
+.doingArea{ padding: 5% 0; width: 90%; display:inline-block; }
+.doingEdit{ width: 100%; border-radius: 3px; padding: 2% 0 0 0; display: inline-block; line-height: 0; border:1px #c89f64 solid; position: relative; }
+.inputbg{ width: 72%; height: 22%; line-height: 20px; background:url("../images/textarea.png") left 75% no-repeat; background-size: 100% auto; position: absolute; left: 3%; bottom:2%; z-index: 99; }
+#doingInput{ width: 100%; height: 100%; font-size: 14px; line-height: 22px; float: left; display: inline-block; background:none; border:none; }
 
+.imgLayer{ width: 95%; height: 90%; margin-bottom: 3%; display: inline-block; } 
 
 /* collections */
 #collections .con{ height: 100%; overflow: hidden; }
-.collections_list{ width: 100%; height: 81%; overflow: auto; margin:2% 0 0 0; display: inline-block; }
+.collections_list{ width: 100%; height: 78%; overflow: auto; margin:6% 0 0 0; display: inline-block; }
 .collections_list li{ width: 48%; display: inline-block; position: relative; line-height: 0; }
 .collections_list li .photo{ width: 85%; position: absolute; left: 7%; top:6%; line-height: 0;  }
+.backprev{ width: 6%; position: absolute; left: 5%; top: 4%; }
 
 
 
