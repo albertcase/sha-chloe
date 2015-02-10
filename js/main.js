@@ -164,7 +164,7 @@ function faceimg4(){
 
 
 
-var text = new createjs.Text("", "16px Arial", "#a2a2a2");
+var text = new createjs.Text("", "16px Arial", "#c79d67");
 function inputFun(textVal){
     text.y=canvasHeight-54;
     text.x=4;
